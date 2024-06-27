@@ -51,7 +51,7 @@ const NavigationBar = () => {
 			<nav>
 				<div className="container px-4">
 					<div className="flex justify-between items-center">
-						<a className="font-black text-3xl" href="#!">
+						<a className="font-black text-3xl" href="/">
 							{" "}
 							⚡BoilerFind{" "}
 						</a>
