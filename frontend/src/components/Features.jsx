@@ -31,14 +31,16 @@ const features = [
 
 const FeatureItem = ({ feature }) => {
 	return (
-		<div className="rounded-[20px] bg-white relative p-6 pt-12 lg:p-12 ml-6 h-full">
-			<div className="w-[74px] h-[74px] bg-white text-yellow-400 rounded-full text-[32px] inline-flex items-center justify-center mb-6 absolute left-0 top-0 -m-6">
-				<i className="fas fa-cannabis"></i>
-				<FontAwesomeIcon icon={feature.icon} />
+		<a href="/leaderboards">
+			<div className="rounded-[20px] bg-white relative p-6 pt-12 lg:p-12 ml-6 h-full hover:text-yellow-400">
+				<div className="w-[74px] h-[74px] bg-white text-yellow-400 rounded-full text-[32px] inline-flex items-center justify-center mb-6 absolute left-0 top-0 -m-6">
+					<i className="fas fa-cannabis"></i>
+					<FontAwesomeIcon icon={feature.icon} />
+				</div>
+				<h4 className="text-2xl font-bold mb-4">{feature.title}</h4>
+				<p className="text-black opacity-90">{feature.description}</p>
 			</div>
-			<h4 className="text-2xl font-bold mb-4">{feature.title}</h4>
-			<p className="opacity-90">{feature.description}</p>
-		</div>
+		</a>
 	);
 };
 

@@ -7,6 +7,7 @@ import {
 	faCaretUp,
 	faCaretDown,
 } from "@fortawesome/free-solid-svg-icons";
+import moment from 'moment'
 
 const BoilerplateCard = ({boilerplate}) => {
     const {
@@ -20,8 +21,24 @@ const BoilerplateCard = ({boilerplate}) => {
 		downVotes,
 		createdAt,
     } = boilerplate
+
+    const boilerplateVotes = upVotes - downVotes
     
     const [voteStatus, setVoteStatus] = useState(null);
+
+    // Url cleaner
+    let cleanUrl = url;
+    // Remove 'https://' from the beginning
+    if (cleanUrl.startsWith("https://")) {
+        cleanUrl = cleanUrl.slice("https://".length);
+    }
+    // Remove the trailing '/'
+    if (cleanUrl.endsWith("/")) {
+        cleanUrl = cleanUrl.slice(0, -1);
+    }
+
+    let createdTime = moment(createdAt);
+    let timeAgo = createdTime.fromNow();
 
     const handleVote = async (value) => {
         try {
@@ -39,7 +56,7 @@ const BoilerplateCard = ({boilerplate}) => {
 					<div className='flex border-solid'>
 						<h1 className='font-bold'>{title}</h1>
 						<p>&nbsp;-&nbsp;</p>
-						<a href={url} target="_blank" className='text-gray-300'>{url}</a>
+						<a href={url} target="_blank" className='text-gray-300'>{cleanUrl}</a>
 					</div>
 					<h2 className='text-sm'>{description}</h2>
 					<div className='flex gap-x-4 flex-wrap'>
@@ -54,8 +71,11 @@ const BoilerplateCard = ({boilerplate}) => {
 					<div className='flex gap-x-4 flex-wrap'>
 						{/* <div className='italic border-solid border-white border px-2 rounded-md'> */}
 						<div>
-                        	{createdAt}
+                        	{timeAgo}
 						</div>
+                        <div className="text-gray-300">
+                            {free ? "free" : "paid"}
+                        </div>
 						{socials.map((social) => {
                             return(
                                 <div className='none text-gray-300'>	
@@ -73,7 +93,12 @@ const BoilerplateCard = ({boilerplate}) => {
                             <FontAwesomeIcon icon={faCaretUp} color={voteStatus === '1' ? 'yellow' : 'white'}/>
                         </button>
                     </div>
-                    <div>{upVotes - downVotes}</div>
+                    <div>
+                        {   voteStatus === '1' ? boilerplateVotes + 1 
+                            : voteStatus === '-1' ? boilerplateVotes - 1 
+                            : boilerplateVotes
+                        }
+                    </div>
                     <div>
                         <button onClick={() => handleVote(-1)}>
                             <FontAwesomeIcon icon={faCaretDown} color={voteStatus === '-1' ? 'yellow' : 'white'}/>

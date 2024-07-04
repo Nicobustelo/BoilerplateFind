@@ -32,12 +32,12 @@ const Footer = () => {
                 />
               </svg>
             </Typography>
-            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
+            <Typography as="a" href="https://x.com/nicolas_bustelo" className="opacity-80 transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
               </svg>
             </Typography>
-            <Typography as="a" href="https://github.com/nicobustelo" className="opacity-80 transition-opacity hover:opacity-100">
+            {/* <Typography as="a" href="https://github.com/nicobustelo" className="opacity-80 transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -45,8 +45,17 @@ const Footer = () => {
                   clipRule="evenodd"
                 />
               </svg>
+            </Typography> */}
+            <Typography as="a" href="https://www.linkedin.com/in/nicolas-bustelo/" className="opacity-80 transition-opacity hover:opacity-100">
+              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fillRule="evenodd"
+                  d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.6c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.6h-3v-5.6c0-1.34-.027-3.06-1.88-3.06-1.88 0-2.17 1.46-2.17 2.97v5.69h-3v-11h2.88v1.5h.04c.4-.77 1.39-1.58 2.86-1.58 3.06 0 3.62 2.01 3.62 4.63v6.45z"
+                  clipRule="evenodd"
+                />
+              </svg>
             </Typography>
-            {/* <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
+           {/* <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"

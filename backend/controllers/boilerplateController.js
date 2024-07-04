@@ -71,7 +71,9 @@ exports.deleteBoilerplate = async (req, res) => {
 // @desc Get hot boilerplates
 // @route GET /api/boilerplates/hot
 exports.getHotBoilerplates = async (req, res) => {
+    console.log('im here');
     const { days } = req.query;
+    console.log(days);
     const cutoffDate = new Date();
     cutoffDate.setDate(cutoffDate.getDate() - days);
 

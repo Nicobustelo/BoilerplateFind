@@ -40,7 +40,7 @@ export default function Leaderboards() {
         <div className='flex flex-col items-center'>
             <div className='max-w-screen-lg'>
                 <div className='flex flex-col items-center mt-14'>
-                    <h1 className='text-4xl font-bold md:text-[70px] p-4 text-center'>Boilerplate Leaderboard</h1>
+                    <h1 className='text-4xl font-bold md:text-[70px] p-4 text-center leading-none'>Boilerplate Leaderboard</h1>
                     <h2 className='px-6 mt-6 text-[17px] leading-[1.8] opacity-80 text-center'>Explore the hottest, top-rated, and newest boilerplates or share your own to help others accelerate learning and deployment! 🚀⚡</h2>
                 </div>
                 <div className='flex items-center justify-center pt-10 mt-5 mb-14'>
