@@ -13,6 +13,6 @@ export default defineConfig({
 		},
 	},
 	build: {
-		outDir: 'dist', // Ensure this matches your dist directory
+		outDir: 'frontend/dist', // Ensure this matches your dist directory
 	},
 });
