@@ -9,8 +9,6 @@ const cors = require('cors');
 
 const app = express();
 
-console.log('hola papa');
-
 // Connect to MongoDB
 connectDB();
 
