@@ -13,6 +13,14 @@ export default defineConfig({
 		},
 	},
 	build: {
-		outDir: 'dist', // Ensure this matches your dist directory
-	},
+		rollupOptions: {
+		  input: '/index.html', // Asegúrate de que esto apunta a tu archivo HTML principal
+		  output: {
+			// Configuración para dividir los chunks, si es necesario
+			manualChunks: {
+			  vendor: ['react', 'react-dom']
+			}
+		  }
+		}
+	}
 });
