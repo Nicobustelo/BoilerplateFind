@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Search from './pages/Search';
 import Leaderboards from './pages/Leaderboards';
 // import Header from './components/Navbar';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 export default function App() {
 	return (
@@ -16,7 +16,7 @@ export default function App() {
 						<Route path="/search" element={<Search />} />
 						<Route path="/leaderboards" element={<Leaderboards />} />
 					</Routes>
-					{/* <Footer /> */}
+					<Footer />
 				</ div>
 			</BrowserRouter>
 		</div>
