@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	base: '/',
 	plugins: [react()],
 	server: {
 		proxy: {
@@ -13,14 +14,6 @@ export default defineConfig({
 		},
 	},
 	build: {
-		rollupOptions: {
-		  input: '/index.html', // Asegúrate de que esto apunta a tu archivo HTML principal
-		  output: {
-			// Configuración para dividir los chunks, si es necesario
-			manualChunks: {
-			  vendor: ['react', 'react-dom']
-			}
-		  }
-		}
-	}
+		outDir: 'dist', // Asegúrate de que esto coincida con tu directorio de salida
+	},
 });
