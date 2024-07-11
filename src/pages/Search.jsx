@@ -30,8 +30,14 @@ export default function Search() {
     const fetchBoilerplates = async () => {
         try {
             const boilerplatesData = await getBoilerplates();
-            boilerplatesData.sort((a, b) => (b.upVotes - b.downVotes) - (a.upVotes - a.downVotes));
-            setBoilerplates(boilerplatesData);
+            console.log(Array.isArray(boilerplatesData)); // should log true
+            console.log(boilerplatesData);
+            if (Array.isArray(boilerplatesData)) {
+                boilerplatesData.sort((a, b) => (b.upVotes - b.downVotes) - (a.upVotes - a.downVotes));
+                setBoilerplates(boilerplatesData);
+            } else {
+                throw new Error('Data is not an array');
+            }
         } catch (error) {
             console.error('Error fetching boilerplates:', error);
         }

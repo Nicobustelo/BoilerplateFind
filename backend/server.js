@@ -15,10 +15,10 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-const PORT = config.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`);
-});
+// const PORT = config.PORT || 5000;
+// app.listen(PORT, () => {
+//     console.log(`Server listening on port ${PORT}`);
+// });
 
 app.use(middleware.requestLogger);
 
