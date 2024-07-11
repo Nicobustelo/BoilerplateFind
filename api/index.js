@@ -1,4 +1,4 @@
-const app = require('../backend/server');
+import app from '../backend/server';
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
