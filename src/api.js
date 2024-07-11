@@ -1,7 +1,7 @@
 // src/api.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5005/api';
+const API_URL = 'https://boilerplatefind.vercel.app/api';
 
 export const getBoilerplates = async () => {
     try {
