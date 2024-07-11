@@ -26,7 +26,13 @@ app.use(middleware.requestLogger);
 app.use('/api/boilerplates', boilerplateRoutes);
 app.use('/api/votes', voteRoutes);
 
+// Error handling middleware
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);
+
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ error: 'Something went wrong!' });
+});
 
 module.exports = app;
