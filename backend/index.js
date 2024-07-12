@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ['https://boilerplatefind-gfbowxj9g-nicolas-bustelos-projects.vercel.app'],
+        origin: ['https://boilerplatefind.vercel.app'],
         methods: ['POST', 'GET'],
         credentials: true
     }
