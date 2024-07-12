@@ -3,6 +3,8 @@ import axios from 'axios';
 
 const API_URL = 'https://boilerplate-find-api.vercel.app/api';
 
+axios.defaults.withCredentials = true;
+
 export const getBoilerplates = async () => {
     try {
         const response = await axios.get(`${API_URL}/boilerplates`);
