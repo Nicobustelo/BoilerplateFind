@@ -87,7 +87,7 @@ export default function Search() {
                     <div className="input-group flex justify-center relative ">
                         <input
                             type="text"
-                            className="min-h-[62px] text-black leading-7 z-10 bg-gray-100 px-8 dark:bg-slate-800 focus:outline-none rounded-full ps-4 w-full"
+                            className="min-h-[62px] text-black leading-7 z-10 bg-gray-100 px-8 focus:outline-none rounded-full ps-4 w-full"
                             placeholder="What's your programming language?"
                             value={inputQuery}
                             onChange={queryChange}

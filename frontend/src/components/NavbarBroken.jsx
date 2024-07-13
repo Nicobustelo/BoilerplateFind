@@ -47,7 +47,7 @@ const AuthNavMenu = () => (
 
 const NavigationBar = () => {
 	return (
-		<div className="ezy__nav2 light py-6 bg-black dark:bg-[#0b1727] text-white dark:text-white relative">
+		<div className="ezy__nav2 light py-6 bg-black text-white relative">
 			<nav>
 				<div className="container px-4">
 					<div className="flex justify-between items-center">
@@ -60,12 +60,12 @@ const NavigationBar = () => {
 							type="button"
 							id="hamburger"
 						>
-							<div className="h-0.5 w-7 bg-black dark:bg-white -translate-y-2"></div>
-							<div className="h-0.5 w-7 bg-black dark:bg-white"></div>
-							<div className="h-0.5 w-7 bg-black dark:bg-white translate-y-2"></div>
+							<div className="h-0.5 w-7 bg-black -translate-y-2"></div>
+							<div className="h-0.5 w-7 bg-black"></div>
+							<div className="h-0.5 w-7 bg-black translate-y-2"></div>
 						</button>
 						<ul
-							className="flex flex-col lg:flex-row justify-center items-center text-3xl gap-6 lg:text-base lg:gap-2 absolute h-screen w-screen top-0 left-full lg:left-0 lg:relative lg:h-auto lg:w-auto bg-white dark:bg-[#0b1727] lg:bg-transparent"
+							className="flex flex-col lg:flex-row justify-center items-center text-3xl gap-6 lg:text-base lg:gap-2 absolute h-screen w-screen top-0 left-full lg:left-0 lg:relative lg:h-auto lg:w-auto bg-white lg:bg-transparent"
 							id="navbar"
 						>
 							<NavMenu routes={routes} />

@@ -67,7 +67,7 @@ const FaqItem = ({ faq }) => {
 			<div
 				className={`${
 					isOpen ? "block" : "hidden"
-				} p-4 lg:p-6 bg-white shadow dark:shadow-none dark:bg-[#1E2735] rounded-xl`}
+				} p-4 lg:p-6 bg-white shadow rounded-xl`}
 			>
 				<p className="text-black opacity-60">{faq.answer}</p>
 			</div>
@@ -81,7 +81,7 @@ FaqItem.propTypes = {
 
 const LandingFAQ = () => {
 	return (
-		<section className="ezy__faq4 light py-14 md:py-24 bg-black dark:bg-[#0b1727] text-white dark:text-white">
+		<section className="ezy__faq4 light py-14 md:py-24 bg-black text-white">
 			<div className="container px-16 md:px-8 lg:px-28">
 				<div className="grid grid-cols-12 justify-center md:mb-6">
 					<div className="col-span-12 lg:col-span-8 lg:col-start-3 xl:px-12 text-center">

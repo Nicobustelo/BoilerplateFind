@@ -16,7 +16,7 @@ const HeaderForm = () => {
                 <div className="input-group flex justify-center relative">
                     <input
                         type="text"
-                        className="min-h-[62px] leading-7 z-10 text-black bg-gray-100 px-8 dark:bg-slate-800 focus:outline-none rounded-full ps-4 w-full"
+                        className="min-h-[62px] leading-7 z-10 text-black bg-gray-100 px-8 focus:outline-none rounded-full ps-4 w-full"
                         placeholder="What's your programming language?"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
@@ -35,7 +35,7 @@ const HeaderForm = () => {
 
 const HeroSection = () => {
 	return (
-		<header className="ezy__header34 light pt-16 md:pt-28 bg-black text-white dark:bg-[#0b1727] dark:text-white relative overflow-hidden z-10">
+		<header className="ezy__header34 light pt-16 md:pt-28 bg-black text-white relative overflow-hidden z-10">
 			<div className="container px-4 mx-auto">
 				<div className="grid grid-cols-12 gap-6">
 					<div className="col-span-12 lg:col-span-7 text-center lg:text-start">
