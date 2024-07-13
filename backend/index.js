@@ -11,7 +11,11 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ['https://boilerplatefind.vercel.app'],
+        origin: [
+            'https://boilerplatefind.vercel.app',
+            'https://www.boilerplatefind.com/search',
+            'https://boilerplatefind.com/search'
+        ],
         methods: ['POST', 'GET'],
         credentials: true
     }
