@@ -13,8 +13,8 @@ app.use(cors(
     {
         origin: [
             'https://boilerplatefind.vercel.app',
-            'https://www.boilerplatefind.com/search',
-            'https://boilerplatefind.com/search'
+            'https://www.boilerplatefind.com',
+            'https://boilerplatefind.com'
         ],
         methods: ['POST', 'GET'],
         credentials: true
