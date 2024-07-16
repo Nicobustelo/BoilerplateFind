@@ -11,7 +11,9 @@ const NavigationBar = () => {
         <nav className="bg-black p-4">
             <div className="flex justify-between items-center px-2">
                 <a className="text-white font-bold text-3xl flex items-center" href="/">
-                    ⚡Boilerplate Find
+                    <img src="https://cdn-icons-png.freepik.com/512/9308/9308719.png" alt="Boilerplate Find Icon" width="35" height="35"/>
+                    {/* <img src="https://cdn-icons-png.freepik.com/512/3832/3832576.png" alt="Boilerplate Find Icon" width="32" height="32"/> ⚡ */}
+                    &nbsp;Boilerplate Find
                 </a>
                 <div className="md:hidden">
                     <button onClick={toggleMenu} className="text-white focus:outline-none">
