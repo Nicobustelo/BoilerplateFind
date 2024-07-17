@@ -32,11 +32,13 @@ const BoilerplateCard = ({boilerplate}) => {
     if (cleanUrl.startsWith("https://")) {
         cleanUrl = cleanUrl.slice("https://".length);
     }
+    // Remove query parameters
+    cleanUrl = cleanUrl.split('?')[0];
     // Remove the trailing '/'
     if (cleanUrl.endsWith("/")) {
         cleanUrl = cleanUrl.slice(0, -1);
     }
-
+        
     let createdTime = moment(createdAt);
     let timeAgo = createdTime.fromNow();
 
