@@ -82,7 +82,7 @@ FaqItem.propTypes = {
 const LandingFAQ = () => {
 	return (
 		<section className="ezy__faq4 light py-14 md:py-24 bg-black text-white">
-			<div className="container px-16 md:px-8 lg:px-28">
+			<div className="container px-2 sm:px-6 lg:px-0">
 				<div className="grid grid-cols-12 justify-center md:mb-6">
 					<div className="col-span-12 lg:col-span-8 lg:col-start-3 xl:px-12 text-center">
 						<h2 className="font-bold text-[25px] md:text-[45px] leading-none mb-4">

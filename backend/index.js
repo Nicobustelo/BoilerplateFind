@@ -9,6 +9,7 @@ const cors = require('cors');
 
 const app = express();
 
+// For development - Add 'http://localhost:5173' to the list of origins
 app.use(cors(
     {
         origin: [

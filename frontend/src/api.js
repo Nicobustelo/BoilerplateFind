@@ -1,6 +1,8 @@
 // src/api.js
 import axios from 'axios';
 
+// For production - Change this to https://boilerplate-find-api.vercel.app/api
+// For development - Change this to http://localhost:5005/api
 const API_URL = 'https://boilerplate-find-api.vercel.app/api';
 
 axios.defaults.withCredentials = true;
