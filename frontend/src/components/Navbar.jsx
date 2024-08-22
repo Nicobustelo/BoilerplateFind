@@ -25,18 +25,18 @@ const NavigationBar = () => {
                 <div className="hidden md:flex md:items-center md:gap-x-4">
                     <a href="/" className="text-white">Home</a>
                     <a href="/leaderboards" className="text-white">
-                        <button className="border border-yellow-400 text-white hover:bg-yellow-400 hover:text-white py-1.5 px-4 rounded">
+                        <button className="border border-yellow-400 text-white hover:bg-yellow-400 hover:text-white py-1.5 px-2.5 rounded">
                             Leaderboards
                         </button>
                     </a>
                     <a href="/search" className="text-white">
-                        <button className="border border-yellow-400 bg-yellow-400 text-orange-800 font-bold hover:bg-opacity-90 py-1.5 px-4 rounded">
+                        <button className="border border-yellow-400 bg-yellow-400 text-orange-800 font-bold hover:bg-opacity-90 py-1.5 px-2.5 rounded">
                             Search
                         </button>
                     </a>
                 </div>
             </div>
-            <div className={`fixed top-0 right-0 w-40 h-55 rounded border border-white border-opacity-80 bg-black text-white z-50 transform transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed top-0 right-0 w-35 h-screen rounded border-l-2 border-white border-opacity-80 bg-black text-white z-50 transform transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="flex justify-end p-4">
                     <button onClick={toggleMenu} className="text-white focus:outline-none">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -44,15 +44,15 @@ const NavigationBar = () => {
                         </svg>
                     </button>
                 </div>
-                <div className="flex flex-col p-4 space-y-4 items-center">
+                <div className="flex flex-col p-4 space-y-4 items-end">
                     <a href="/" className="text-white">Home</a>
                     <a href="/search" className="text-white">
-                        <button className="border border-yellow-400 bg-yellow-400 text-orange-800 font-bold hover:bg-opacity-90 py-1.5 px-4 rounded">
+                        <button className="border border-yellow-400 bg-yellow-400 text-orange-800 font-bold hover:bg-opacity-90 py-1.5 px-2 rounded">
                             Search
                         </button>
                     </a>
                     <a href="/leaderboards" className="text-white">
-                        <button className="border border-yellow-400 text-white hover:bg-yellow-400 hover:text-white py-1.5 px-4 rounded">
+                        <button className="border border-yellow-400 text-white hover:bg-yellow-400 hover:text-white py-1.5 px-2 rounded">
                             Leaderboards
                         </button>
                     </a>
