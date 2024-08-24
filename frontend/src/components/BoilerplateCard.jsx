@@ -61,10 +61,10 @@ const BoilerplateCard = ({boilerplate}) => {
 						<a href={url} target="_blank" className='text-gray-300'>{cleanUrl}</a>
 					</div>
 					<h2 className='text-sm'>{description}</h2>
-					<div className='flex gap-x-4 flex-wrap'>
+					<div className='flex gap-x-1 flex-wrap'>
 						{stack.map((language) => {
                             return(
-                                <div key={language} className='px-2 bg-slate-800 rounded-lg text-white'>
+                                <div key={language} className='px-1.5 bg-slate-800 rounded-md mt-3 text-white'>
                                     {language}
                                 </div>
                             )
