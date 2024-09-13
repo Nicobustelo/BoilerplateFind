@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faCaretUp,
 	faCaretDown,
+    faClock,
+    faDollarSign,
 } from "@fortawesome/free-solid-svg-icons";
 import moment from 'moment'
 
@@ -53,29 +55,31 @@ const BoilerplateCard = ({boilerplate}) => {
     };
 
     return ( 
-        <div className='grid grid-cols-9 border-solid border border-white rounded-md m-2 p-2 '>
+        <div className='grid grid-cols-9 border-solid border border-opacity-80 border-white rounded-md m-2 p-2 '>
 				<div className='col-span-8 flex flex-col space-y-1'>
-					<div className='flex border-solid'>
-						<h1 className='font-bold'>{title}</h1>
+					<div className='flex border-solid items-center'>
+						<h1 className='font-bold text-lg'>{title}</h1>
 						<p>&nbsp;-&nbsp;</p>
 						<a href={url} target="_blank" className='text-gray-300'>{cleanUrl}</a>
 					</div>
 					<h2 className='text-sm'>{description}</h2>
-					<div className='flex gap-x-1 flex-wrap'>
+					<div className='flex gap-x-1 flex-wrap pt-1.5'>
 						{stack.map((language) => {
                             return(
-                                <div key={language} className='px-1.5 bg-slate-800 rounded-md mt-3 text-white'>
+                                <div key={language} className='px-2.5 bg-slate-800 rounded-full mt-2 text-sm font-medium border-solid border border-opacity-60 border-white text-white'>
                                     {language}
                                 </div>
                             )
                         })}
 					</div>
-					<div className='flex gap-x-4 flex-wrap'>
+					<div className='flex gap-x-4 flex-wrap pt-1'>
 						{/* <div className='italic border-solid border-white border px-2 rounded-md'> */}
-						<div>
+						<div className="flex items-center justify-center gap-x-1.5">
+                            <FontAwesomeIcon icon={faClock} color="rgb(229 231 235)" size="sm"/>
                         	{timeAgo}
 						</div>
-                        <div className="text-gray-300">
+                        <div className="flex items-center justify-center gap-x-1.5">
+                            <FontAwesomeIcon icon={faDollarSign} color="rgb(229 231 235)" size="sm"/>
                             {free ? "free" : "paid"}
                         </div>
 						{socials.map((social) => {
